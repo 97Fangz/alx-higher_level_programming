@@ -1,11 +1,7 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    argc = len(sys.argv)
-    argv = sys.argv
-    res = 0
-
-    for i in range(1, argc):
-        res = res + int(argv[i])
-
-        print(res)
+    result = 0
+    for a in range(1, len(sys.argv)):
+        result += int(sys.argv[a])
+        print("{}".format(result))
