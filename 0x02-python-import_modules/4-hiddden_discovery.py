@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    import hidden_4
-    arr = dir(hidden_4)
+    from hidden_4 import *
+    arr = dir()
     for i in range(len(arr)):
         if (arr[i][:2] != "__"):
-            print(arr[i]):wq
+            print(arr[i])
 
