@@ -9,6 +9,6 @@ def roman_to_int(roman_string):
         if a > 0 and roman_d[roman_string[a]] > roman_d[roman_string[a - 1]]:
             roman_n += roman_d[roman_string[a]] - 2 * \
                     roman_d[roman_string[a - 1]]
-                else:
-                    roman_n += roman_d[roman_string[a]]
+        else:
+            roman_n += roman_d[roman_string[a]]
     return roman_n
