@@ -15,7 +15,7 @@ class Square:
             size (int): size of a side of the square
 
         Returns:
-        None
+            None
         """
         self.size = size
 
@@ -23,7 +23,7 @@ class Square:
         """calculates the square's area
 
         Returns:
-          The area of the square
+            The area of the square
         """
         return (self.__size) ** 2
 
@@ -32,7 +32,7 @@ class Square:
         """getter of __size
 
         Returns:
-          The size of the square
+            The size of the square
         """
         return self.__size
 
@@ -47,7 +47,7 @@ class Square:
             None
         """
         if type(value) is not int:
-                 raise TypeError("size must be an integer")
+            raise TypeError("size must be an integer")
         else:
             if value < 0:
                 raise ValueError("size must be >= 0")else:
@@ -60,7 +60,7 @@ class Square:
         Args:
             other (Square): square to compare against
         Returns:
-        true or False
+            True or False
         """
         return self.size < other.size
 
