@@ -75,7 +75,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
-        
+
         Args:
             value: value of the height, must be a positive integer
         """
@@ -87,6 +87,7 @@ class Rectangle:
 
     def area(self):
         """Calculates the area of a Rectangle instance
+        
         Returns:
             Area of the the rectangle, given by height * width
         """
