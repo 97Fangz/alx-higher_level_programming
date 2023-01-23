@@ -110,7 +110,7 @@ class Rectangle:
         Args:
             rect_1: Rectangle instance
             rect_2: Rectangle instance different from rect_1
-            
+
         Returns:
             The instance with the biggest area,
             or rect_1 if both rectangles have the same area
@@ -130,6 +130,7 @@ class Rectangle:
 
         Args:
             size: size to set the new rectangle to
+            
         Returns:
             The new Rectangle instance
         """
