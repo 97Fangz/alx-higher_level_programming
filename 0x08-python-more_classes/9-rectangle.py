@@ -52,12 +52,12 @@ class Rectangle:
     @property
     def width(self):
         """Retrieves the width of a Rectangle instance."""
-
         return self.__width
 
     @width.setter
     def width(self, value):
         """Sets the width of a Rectangle instance
+        
         Args:
             value: value of the width, must be a positive integer
         """
