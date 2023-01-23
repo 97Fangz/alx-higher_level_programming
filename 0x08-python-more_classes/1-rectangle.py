@@ -24,7 +24,7 @@ class Rectangle:
         @width.setter
         def width(self, value):
             """Sets the width of a Rectangle instance
-            
+
             Args:
                 value: value of the width, must be a positive integer
             """
@@ -42,6 +42,7 @@ class Rectangle:
         @height.setter
         def height(self, value):
             """Sets the height of a Rectangle instance
+            
             Args:
                 value: value of the height, must be a positive integer
             """
