@@ -9,6 +9,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
+
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -53,6 +54,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
+        
         Args:
             value: value of the height, must be a positive integer
         """
