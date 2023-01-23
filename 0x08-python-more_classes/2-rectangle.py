@@ -8,6 +8,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
+        
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -63,4 +64,4 @@ class Rectangle:
         """
         if self._height == 0 or self._width == 0:
             return 0
-        return 2 * (self._width + self.
+        return 2 * (self._width + self.)
