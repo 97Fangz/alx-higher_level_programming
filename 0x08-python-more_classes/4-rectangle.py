@@ -3,6 +3,6 @@
 Defines a Rectangle class.
 """
 class Rectangle:
-    """Rectangle class defined by width and he
+    """Rectangle class defined by width and
     def __init__(self, width=0, height=0):
         """Initializ
