@@ -10,8 +10,8 @@ def is_kind_of_class(obj, a_class):
     Args:
         obj: object to look at
         a_class: class to evaluate
-        
-    Returns: True of False
+
+        Returns: True of False
     """
 
     return isinstance(obj, a_class)
