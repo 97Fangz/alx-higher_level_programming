@@ -5,7 +5,7 @@
 
 class Rectangle:
     """Rectangle class defined by width and height.
-    
+
     Attributes:
         number_of_instances: number of Rectangle instances,
         increments with every instantitation,
@@ -17,6 +17,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
+
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -51,6 +52,7 @@ class Rectangle:
     @property
     def width(self):
         """Retrieves the width of a Rectangle instance."""
+        
         return self.__width
 
     @width.setter
