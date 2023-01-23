@@ -95,7 +95,6 @@ class Rectangle:
 
     def perimeter(self):
         """Calculates the perimeter of a Rectangle instance
-        
         Returns:
             Perimeter of the rectangle, given by 2 * (height + width)
         """

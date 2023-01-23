@@ -130,8 +130,8 @@ class Rectangle:
 
         Args:
             size: size to set the new rectangle to
-            
-        Returns:
+
+            Returns:
             The new Rectangle instance
         """
         return cls(size, size)
