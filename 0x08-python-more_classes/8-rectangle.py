@@ -87,7 +87,7 @@ class Rectangle:
 
     def area(self):
         """Calculates the area of a Rectangle instance
-        
+
         Returns:
             Area of the the rectangle, given by height * width
         """
@@ -95,6 +95,7 @@ class Rectangle:
 
     def perimeter(self):
         """Calculates the perimeter of a Rectangle instance
+
         Returns:
             Perimeter of the rectangle, given by 2 * (height + width)
         """
@@ -105,6 +106,7 @@ class Rectangle:
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Finds the biggest Rectangle based on the area
+        
         Args:
             rect_1: Rectangle instance
             rect_2: Rectangle instance different from rect_1
