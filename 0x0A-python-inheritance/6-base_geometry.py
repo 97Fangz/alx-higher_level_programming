@@ -8,7 +8,7 @@ class BaseGeometry:
 
     def area(self):
         """To raise an exception with a message
-        
+
         Args:
             area: the exception
 
