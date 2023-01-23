@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Module 3-rectangle
-Defines a Rectangle class.
+"""Defines a Rectangle class.
 """
 
 
@@ -9,7 +8,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle instance.
-
+        
         Args:
             width: width of the rectangle
             height: height of the rectangle
@@ -29,6 +28,16 @@ class Rectangle:
             rec_str += '\n'
         return rec_str[:-1]
 
+    def __repr__(self):
+        """Return a string representation of a Rectangle instance
+        that is able to recreate a new instance by using eval()
+        """
+        return "Rectangle({}, {})".format(self.__width, self.__height)
+
+    def __del__(self):
+        """Deletes a Rectangle instance."""
+        print("Bye rectangle...")
+
     @property
     def width(self):
         """Retrieves the width of a Rectangle instance."""
@@ -37,7 +46,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Sets the width of a Rectangle instance
-
         Args:
             value: value of the width, must be a positive integer
         """
@@ -55,7 +63,6 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Sets the height of a Rectangle instance
-
         Args:
             value: value of the height, must be a positive integer
         """
@@ -67,7 +74,6 @@ class Rectangle:
 
     def area(self):
         """Calculates the area of a Rectangle instance
-
         Returns:
             Area of the the rectangle, given by height * width
         """
@@ -75,7 +81,6 @@ class Rectangle:
 
     def perimeter(self):
         """Calculates the perimeter of a Rectangle instance
-        
         Returns:
             Perimeter of the rectangle, given by 2 * (height + width)
         """
