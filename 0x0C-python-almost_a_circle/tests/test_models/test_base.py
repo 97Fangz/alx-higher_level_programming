@@ -130,8 +130,4 @@ Security
 Status
 Docs
 Contact GitHub
-Pricing
-API
-Training
-Blog
-Abou
+Pr
