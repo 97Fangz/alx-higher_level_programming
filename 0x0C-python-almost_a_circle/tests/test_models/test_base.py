@@ -129,5 +129,4 @@ Privacy
 Security
 Status
 Docs
-Contact GitHub
-Pr
+Contact
