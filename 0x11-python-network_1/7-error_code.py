@@ -1,24 +1,18 @@
 #!/usr/bin/python3
 """
--> script that takes in a letter and sends a POST
--> rquest to http://0.0.0.0:5000/search_user
--> with the letter "q" as a parameter.
+-> Python script that takes in a URL and an email, sends
+-> if http status is greater that or equal to 400 prints Error code.
+-> folowed by a value
 """
-
 import sys
 import requests
 
 
 if __name__ == "__main__":
-    letter = "" if len(sys.argv) == 1 else sys.argv[1]
-    payload = {"q": letter}
+    url = sys.argv[1]
 
-    r = requests.post("http://0.0.0.0:5000/search_user", data=payload)
-    try:
-        response = r.json()
-        if response == {}:
-            print("No result")
-        else:
-            print("[{}] {}".format(response.get("id"), response.get("name")))
-    except ValueError:
-        print("Not a valid JSON")
+    r = requests.get(url)
+    if r.status_code >= 400:
+        print("Error code: {}".format(r.status_code))
+    else:
+        print(r.text)
